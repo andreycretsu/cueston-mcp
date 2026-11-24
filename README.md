@@ -22,6 +22,8 @@ https://app.cueston.com/api/mcp
 claude mcp add --transport http cueston https://app.cueston.com/api/mcp
 ```
 
+Gemini CLI: `gemini extensions install https://github.com/andreycretsu/cueston-mcp`, then `/mcp auth cueston`.
+
 **Local (stdio) bridge**, for clients that only run local servers:
 
 ```json

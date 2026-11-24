@@ -1,0 +1,10 @@
+{
+  "name": "cueston",
+  "version": "0.2.1",
+  "description": "Build, preview and publish in-app product tours, tooltips, banners, checklists, surveys and announcements on your SaaS app, and read their analytics. Hosted MCP server; sign in with your Cueston account (OAuth).",
+  "mcpServers": {
+    "cueston": {
+      "httpUrl": "https://app.cueston.com/api/mcp"
+    }
+  }
+}
