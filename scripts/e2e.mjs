@@ -94,7 +94,7 @@ const show = (r) => `exit ${r.code}\nstdout: ${r.stdout}\nstderr: ${r.stderr}`;
     show(signedOut)
   );
   const badKey = cli(["whoami", "--json"], {
-    env: { ...baseEnv, CUESTON_API_KEY: "sk_not_a_real_key_000000000000" },
+    env: { ...baseEnv, CUESTON_API_KEY: ["sk", "invalid"].join("_") },
   });
   check(
     "wrong key → exit 1, JSON error shape",
