@@ -44,7 +44,7 @@
     "commander": "^14.0.2",
     "esbuild": "^0.27.2",
     "picocolors": "^1.1.1",
-    "typescript": "5.9.3",
+    "typescript": "7.0.2",
     "vitest": "^3.2.4",
     "yaml": "^2.9.1"
   },
