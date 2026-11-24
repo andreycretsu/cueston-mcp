@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.cueston/cueston",
+  "title": "Cueston",
+  "description": "Build, check, preview and publish product tours, tooltips, banners and surveys in your app.",
+  "websiteUrl": "https://cueston.com/docs/mcp",
+  "version": "0.2.1",
+  "icons": [{ "src": "https://cueston.com/icon-512.png", "mimeType": "image/png", "sizes": ["512x512"] }],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.cueston.com/api/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "cueston",
+      "version": "0.2.1",
+      "transport": { "type": "stdio" },
+      "packageArguments": [{ "type": "positional", "value": "mcp" }],
+      "environmentVariables": [
+        {
+          "name": "CUESTON_API_KEY",
+          "description": "A Cueston secret API key (sk_…). Not needed after `cueston login` on this computer.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

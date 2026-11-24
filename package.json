@@ -1,0 +1,54 @@
+{
+  "name": "cueston",
+  "mcpName": "com.cueston/cueston",
+  "version": "0.2.1",
+  "description": "The Cueston command line and MCP server: build, check, preview and publish in-app guidance from your terminal, CI or AI agent.",
+  "license": "MIT",
+  "homepage": "https://cueston.com/docs/cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreycretsu/cueston-mcp.git"
+  },
+  "keywords": [
+    "cueston",
+    "cli",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "ai-agents",
+    "product-tours",
+    "onboarding",
+    "tooltips",
+    "in-app-guidance"
+  ],
+  "type": "module",
+  "bin": {
+    "cueston": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "type-check": "tsc --noEmit -p .",
+    "test": "vitest run",
+    "e2e": "node scripts/e2e.mjs",
+    "prepublishOnly": "npm run type-check && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "commander": "^14.0.2",
+    "esbuild": "^0.27.2",
+    "picocolors": "^1.1.1",
+    "typescript": "5.9.3",
+    "vitest": "^3.2.4",
+    "yaml": "^2.9.1"
+  },
+  "bugs": {
+    "url": "https://github.com/andreycretsu/cueston-mcp/issues"
+  }
+}
